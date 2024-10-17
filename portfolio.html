@@ -10,10 +10,10 @@
         <header id="header-content">
             <h1 id="rname">nikairu</h1>   
             <nav id="navi">
-                <a id="home" class="link" aria-disabled="true" onclick="homeClick()">Home</a>
-                <a id="about" class="link" aria-disabled="true" onclick="aboutClick()">About</a>
-                <a id="exp" class="link" aria-disabled="true" onclick="expClick()">Experience</a>
-                <a id="proj" class="link" aria-disabled="true" onclick="projClick()">Projects</a>
+                <a id="home" class="link hide" aria-disabled="true" onclick="homeClick()">Home</a>
+                <a id="about" class="link hide" aria-disabled="true" onclick="aboutClick()">About</a>
+                <a id="exp" class="link hide" aria-disabled="true" onclick="expClick()">Experience</a>
+                <a id="proj" class="link hide" aria-disabled="true" onclick="projClick()">Projects</a>
             </nav>
             <div id="button-border">
                 <button id="switch-mode"></button>
@@ -36,12 +36,6 @@
                             <img height="300" width="300" id="image" src="img5.jpg">
                         </div>
                 </div>
-                <div id="right-block">
-                    <div id="contact">
-                        <a id="github" class="contact" href="https://github.com/nika-iru"><img height="50" width="50" src="github.png" class="contact-link" href=""></a>
-                        <a id="insta" class="contact" href="https://www.instagram.com/_xav.f/"><img height="50" width="50" src="insta.png" class="contact-link" href=""></a>
-                    </div>
-                </div>
             </div>
 
             <div id="about-block">
@@ -49,13 +43,18 @@
                 <div id="about-content">
                     <div class="about-content-block" id="about-left">
                         <h2>- Skills -</h2>
-                        <div id="skill-content">
+                            <a class="skills" aria-disabled="true" onclick="aboutClick()" id="skills">
+                                <ul>
+                                    <li>Critical-Thinking</li>
+                                    <li>Problem-Solving</li>
+                                    <li>Logical Reasoning</li>
+                                    <li>Adaptability</li>
+                                    <li>Intra-personal Communication</li>
+                                </ul>
+                            </a>
                             <a class="skills" aria-disabled="true" onclick="aboutClick" id="csharp">
                                 <img class="software_logo" height="80" width="80" src="csharp.png">
                                 <h2 class="software">C Sharp</h2>
-                                <div id="csharp-skills">
-
-                                </div>
                             </a>
                             <a class="skills" aria-disabled="true" onclick="aboutClick()" id="python">
                                 <img class="software_logo" height="80" width="80" src="python.png">
@@ -65,7 +64,6 @@
                                 <img class="software_logo" height="80" width="80" src="java.png">
                                 <h2 class="software">Java</h2>
                             </a>
-                        </div>
                     </div>
 
                     <div class="about-content-block" id="about-mid">
@@ -88,31 +86,23 @@
 
                     <div class="about-content-block" id="about-right">
                         <h2>- Education -</h2>
-                            <div id="educ-content"> 
-                                <div id="educ-description">
-                                    <h2 class="year">2010 - 2016</h2>
-                                    <h2 class="year">2016 - 2022</h2>
-                                    <h2 class="year">2022 - 2023</h2>
-                                    <h2 class="year">2023 - Present</h2>
-                                </div>
                                 <div class="education addu" id="gs">
                                     <img class="school_logo" height="80" width="80" src="addu.png">
-                                    <h2 class="school">Ateneo de Davao University GS</h2>
+                                    <h2 class="school" id="gs">Ateneo de Davao University GS</h2>
                                 </div>
                                 <div class="education addu"  id="hs">
                                     <img class="school_logo" height="80" width="80" src="addu.png">
-                                    <h2 class="school">Ateneo de Davao University JHS & SHS</h2>
+                                    <h2 class="school" id="hs">Ateneo de Davao University JHS & SHS</h2>
                                 </div>
                                 <div class="education addu"  id="coll1">
                                     <img class="school_logo" height="80" width="80" src="addu.png">
-                                    <h2 class="school">Ateneo de Davao University College</h2>
+                                    <h2 class="school" id="col1">Ateneo de Davao University College</h2>
                                 </div>
                                 <div class="education mmcm"  id="coll2">
                                     <label for="coll2"></label>
                                     <img class="school_logo" height="80" width="80" src="mmcm.png">
-                                    <h2 class="school">Mapua Malayan Colleges Mindanao</h2>
+                                    <h2 class="school" id="col2">Mapua Malayan Colleges Mindanao</h2>
                                 </div>
-                            </div>
                     </div>
                 </div>
             </div>
@@ -182,8 +172,14 @@
         </main>
 
         <footer>
-            <h6 id="copyright">© 2024 Xavier Fuentes</h6>
+            <div class="center">
+                <h6 id="copyright">© 2024 Xavier Fuentes, All Rights Reserved.</h6>
+                <div id="social-links">
+                    <a class="socials" id="insta" href="instagram.com/_xav.f">Instagram</a>
+                    <a class="socials" id="github" href="github.com/nika-iru">Github</a>
+                </div>
+            </div>
         </footer>
     </body>
-    <script src="portfolio.js"></script>
+    <!--<script src="portfolio.js"></script>-->
 </html>

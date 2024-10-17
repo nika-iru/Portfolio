@@ -65,8 +65,8 @@ function updateBackgroundColor() {
         const element = document.getElementById("about-block");
         const about = document.getElementById("about-label");
         element.style.backgroundColor = 'transparent';
-        about.style.marginRight = '42%';
-        about.style.marginLeft = '42%';
+        about.style.marginRight = '35%';
+        about.style.marginLeft = '35%';
     }
 
     // Update 'exp-block'
